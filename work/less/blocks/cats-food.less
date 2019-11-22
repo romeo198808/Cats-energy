@@ -1,0 +1,103 @@
+.cats-food {
+  position: relative;
+  z-index: 10;
+  background-image: url("../img/background-mobile.jpg"), linear-gradient(to bottom, #63a73a 61%, #ffffff 61%);
+  // background-image: url("../img/background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+.cats-food__wrap {
+  padding: 0 20px;
+  padding-bottom: 20px;
+  padding-top: 32px;
+}
+.cats-food__title {
+  width: 280px;
+  margin: 0 auto;
+
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+.cats-food__img {
+  position: absolute;
+  left: 50%;
+  top: 167px;
+  width: 280px;
+  margin-left: -140px;
+}
+.cats-food__text {
+  margin: 0;
+  margin-top: 13px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cats-food__button {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 303px;
+}
+@media (min-width: @tablet) {
+  .cats-food {
+    background-image: none;
+  }
+  .cats-food__wrap {
+    padding: 25px 117px 529px;
+  }
+  .cats-food__title {
+    width: 430px;
+    margin: 0;
+
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+    text-align: left;
+  }
+  .cats-food__img {
+    top: 230px;
+    z-index: 10;
+    width: 710px;
+    margin-left: -355px;
+  }
+  .cats-food__text {
+    margin-top: 35px;
+
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-align: left;
+  }
+  .cats-food__button {
+    position: relative;
+    z-index: 20;
+
+    width: 245px;
+    margin: 0;
+    margin-top: 50px;
+  }
+}
+@media (min-width: @desktop) {
+  .cats-food {
+    margin-top: -167px;
+    min-height: 780px;
+    background-image: url("../img/background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 50% 700px;
+
+  }
+  .cats-food__wrap {
+    padding: 231px 190px 236px;
+  }
+  .cats-food__img {
+    top: 142px;
+    width: 552px;
+    margin-left: -155px;
+  }
+}

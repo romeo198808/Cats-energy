@@ -4,25 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Cat Energy - питание для кошек">
-    <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Cat Energy - Главная страница</title>
   </head>
   <body>
-    <div style="display: none;">
-      <include src="work/img/sprite.svg"></include>
-    </div>
+
     <header class="page-header">
       <div class="page-header__wrap">
         <a href="#" class="page-header__logo logo">
-          <img src="img/logo-mobile.svg" alt="Logo" class="logo__img">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Logo" class="logo__img">
+          </picture>
           <span class="logo__text"><span>Cat</span> energy</span>
         </a>
         <button type="button" class="main-nav__toggle main-nav__toggle--close">Кнопкаоткрытия меню</button>
       </div>
       <nav class="main-nav main-nav__nojs">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Каталог продукции</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Подбор программы</a></li>
         </ul>
@@ -36,10 +38,15 @@
         <div class="cats-food__wrap">
           <h2 class="cats-food__title">Функциональное питание для котов</h2>
           <picture>
-            <img src="" alt="Cat energy PRO со вкусом курицы" class="cats-food__img">
+            <source type="image/webp" media="(min-width:1440px)" srcset="img/can-desktop.webp, img/can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/can-tablet.webp, img/can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/can-mobile.webp, img/can-mobile@2x.webp 2x">
+            <source media="(min-width:1440px)" srcset="img/can-desktop.png, img/can-desktop@2x.png 2x">
+            <source media="(min-width:768px)" srcset="img/can-tablet.jpg, img/can-tablet@2x.jpg 2x">
+            <img src="img/can-mobile.png" srcset="img/can-mobile@2x.png 2x" alt="Cat energy PRO со вкусом курицы" class="cats-food__img">
           </picture>
           <p class="cats-food__text">Занялся собой? Займись котом!</p>
-          <a href="#" class="cats-food__button main-button">Подобрать программу</a>
+          <a href="#" class="cats-food__button main-button"><span>Подобрать программу</span></a>
         </div>
       </article>
 

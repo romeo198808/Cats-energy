@@ -1,5 +1,6 @@
 .page-header__wrap {
   position: relative;
+  z-index: 20;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,4 +11,26 @@
 
   background-color: #ffffff;
   box-sizing: border-box;
+}
+@media (min-width: @tablet) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding: 0 30px;
+  }
+  .page-header__wrap {
+    width: auto;
+    padding: 0;
+    min-height: 110px;
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: @desktop) {
+  .page-header {
+    padding: 0 110px;
+  }
+  .page-header__wrap {
+    min-height: 167px;
+  }
 }

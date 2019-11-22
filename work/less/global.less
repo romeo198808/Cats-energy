@@ -28,9 +28,9 @@
 }
 body {
   position: relative;
+  width: 100%;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
 
   font-family: "OpenSans", Arial, sans-serif;
   font-style: normal;
@@ -38,8 +38,6 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-
-  overflow-x: hidden;
 }
 img {
   width: 100%;
@@ -61,4 +59,23 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.main-button {
+  display: block;
+  width: auto;
+
+  line-height: 40px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: @button-color;
+  &:hover,
+  &:focus {
+    background-color: @button-hover;
+  }
+  &:active span {
+    opacity: 0.3;
+  }
 }
