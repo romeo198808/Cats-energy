@@ -1,6 +1,6 @@
 'use strict';
 
-(function functionName() {
+(function () {
   var mainNav = document.querySelector('.main-nav');
   var toggle = document.querySelector('.main-nav__toggle');
 
