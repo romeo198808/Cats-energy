@@ -100,41 +100,14 @@
   }
   display: block;
 }
-.example__range {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 200px;
-  margin: 0 auto;
-  margin-top: 35px;
 
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #000000;
-  font-weight: bold;
-}
-.range__line {
-  width: 78px;
-  height: 8px;
-  padding: 3px;
-  border: 1px solid #cdcdcd;
-  border-radius: 4px;
-  background-color: #ffffff;
-}
-.range__button {
-  width: 50%;
-  height: 8px;
-  box-sizing: border-box;
-  background-color: @button-color;
-  border-radius: 3px;
-}
 @media (min-width: @tablet) {
   .example {
     position: relative;
-    padding: 50px 30px 60px;
+    padding: 50px 30px 0;
     background-color: #ffffff;
     border-top: 1px solid #e6e6e6;
+    background-image: linear-gradient(to bottom, #ffffff 55%, #eaeaea 55%, #eaeaea 100%);
   }
   .example__title {
     font-size: 60px;
@@ -180,7 +153,7 @@
     width: 100%;
     padding: 0 30px;
     margin-left: -30px;
-    background-image: linear-gradient(to bottom, #ffffff 25%, #eaeaea 25%, #eaeaea 100%);
+
   }
   .example__img__box {
     width: 677px;
@@ -206,51 +179,42 @@
       width: 545px;
     }
   }
-  .example__range {
-    width: 570px;
-    margin-top: 15px;
-    padding-bottom: 68px;
-
-    font-size: 20px;
-    line-height: 20px;
-
-    & span {
-      display: flex;
-      align-items: center;
-      height: 30px;
-      border-bottom: 1px dotted #b8b8b8;
-    }
+}
+@media (min-width: @desktop) {
+  .example {
+    padding: 80px 110px 70px;
+    border-top: none;
+    background-image: linear-gradient(to bottom, #ffffff 33%, #eaeaea 33%, #eaeaea 100%);
   }
-  .range__line {
+  .example__text {
+    width: 450px;
+    margin-top: 140px;
+    line-height: 24px;
+  }
+  .example__box {
+    margin-top: 65px;
+  }
+  .example__price {
     position: relative;
-    width: 400px;
-    height: 6px;
+    top: 0;
+    right: 0;
+
+    width: 360px;
+
+    text-align: left;
+  }
+  .example__inner {
+    position: absolute;
+    top: 12px;
+    right: 124px;
+    width: auto;
     padding: 0;
-
-    background-color: #b8b8b8;
-    border: none;
+    margin: 0;
   }
-  .range__button {
-    position: relative;
-    left: 50%;
-    top: -14px;
-    width: 32px;
-    height: 32px;
-    margin-left: -17px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    border: 1px solid #cdcdcd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    &::before {
-      content: "";
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      width: 8px;
-      height: 8px;
-
-      border-radius: 50%;
-      background-color: @button-color;
-    }
+  .example__img__box {
+    margin: 0;
+  }
+  .example__box__text span {
+    background-color: #eaeaea;
   }
 }
