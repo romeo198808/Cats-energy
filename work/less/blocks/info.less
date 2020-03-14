@@ -1,0 +1,46 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+.info__title {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.info__adress {
+  width: 140px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+@media (min-width: @tablet) {
+  .info {
+    padding: 65px 70px;
+  }
+  .info__title {
+    width: 200px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .info__adress {
+    width: 200x;
+    font-size: 20px;
+    line-height: 24px;
+    & span {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
+@media (min-width: @desktop) {
+  .info {
+    position: absolute;
+    left: 109px;
+    bottom: 253px;
+  }
+}
